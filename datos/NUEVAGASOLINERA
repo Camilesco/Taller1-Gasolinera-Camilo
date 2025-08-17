@@ -1,0 +1,13 @@
+tipo:ACPM:30000:22000.0
+tipo:Extra:15000:150.0
+tipo:Corriente:12500:100.0
+tipo:EXTRA EXTRA:20000:200.0
+surtidor:Juan:ACPM:0.0:Extra:0.0:Corriente:0.0:EXTRA EXTRA:0.0
+surtidor:Juan:ACPM:0.0:Extra:0.0:Corriente:0.0:EXTRA EXTRA:0.0
+surtidor:Sandra:ACPM:0.0:Extra:0.0:Corriente:0.0:EXTRA EXTRA:0.0
+surtidor:Pepita:ACPM:0.0:Extra:0.0:Corriente:0.0:EXTRA EXTRA:0.0
+empleado:Salome:0
+empleado:Camilo:0
+empleado:Juan:0
+empleado:Pepita:0
+empleado:Sandra:0
