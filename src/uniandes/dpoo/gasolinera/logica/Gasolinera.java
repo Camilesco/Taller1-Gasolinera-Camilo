@@ -210,8 +210,15 @@ public class Gasolinera
     {
         TipoGasolina tipo = tiposGasolina.get( nombreTipoGasolina );
         double cantidadSolicitada = valorSolicitado / ( double )tipo.getPrecioPorGalon( );
+        int precioCobrado = venderGasolinaPorCantidad(nombreTipoGasolina, cantidadSolicitada, numeroSurtidor);
 
-        return venderGasolinaPorCantidad( nombreTipoGasolina, cantidadSolicitada, numeroSurtidor );
+        int delta = valorSolicitado - precioCobrado;
+        if (delta != 0) {
+        	Empleado emp = getSurtidor(numeroSurtidor).getEmpleadoAsignado();
+            if (emp != null) emp.agregarDinero(delta);
+        }
+
+        return valorSolicitado;
     }
 
     /**
